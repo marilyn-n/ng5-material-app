@@ -1,3 +1,4 @@
+<body>
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span> MY Custom Toolbar</span>
@@ -8,3 +9,22 @@
     
   </mat-toolbar-row>
 </mat-toolbar>
+
+<div>
+  <img src="https://prodigalthought.files.wordpress.com/2018/01/book-and-coffee.jpg" alt="coffe-and-books" width="1258px" height="500px">
+</div>
+
+<mat-card>
+  <mat-form-field>
+    <input matInput[(ngModel)]="answer" placeholder="What's your favorite food?">
+  </mat-form-field>
+  <br>
+  <button mat-raised-button (click)="showAnswer()">Answer me</button>
+  <mat-spinner [style.display]="showSpinner ? 'block' : none "></mat-spinner>
+
+</mat-card>
+
+<mat-card *ngIf="answerDisplay">
+<h1>{{ answerDisplay }}, wooow that sounds delicious!</h1>
+</mat-card>
+</body>
