@@ -16,11 +16,12 @@
 
 <mat-card>
   <mat-form-field>
-    <input matInput[(ngModel)]="answer" placeholder="What's your favorite food?">
+    <!-- <input matInput[(ngModel)]="answer" placeholder="What's your favorite food?"> -->
+    <input matInput [(ngModel)]="answer" placeholder="Favorite food">
   </mat-form-field>
   <br>
   <button mat-raised-button (click)="showAnswer()">Answer me</button>
-  <mat-spinner [style.display]="showSpinner ? 'block' : none "></mat-spinner>
+  <mat-spinner [style.display]="showSpinner ? 'block' : 'none' "></mat-spinner>
 
 </mat-card>
 

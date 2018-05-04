@@ -16,6 +16,6 @@ export class AppComponent {
    setTimeout(() => {
      this.answerDisplay = this.answer;
      this.showSpinner = false;
-   }, 2000);
+   }, 1000);
  }
 }
